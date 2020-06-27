@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'amerika_sansregular';
+    src: url('AMERSN__-webfont.eot');
+    src: url('AMERSN__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('AMERSN__-webfont.woff2') format('woff2'),
+         url('AMERSN__-webfont.woff') format('woff'),
+         url('AMERSN__-webfont.ttf') format('truetype'),
+         url('AMERSN__-webfont.svg#amerika_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'amerikaregular';
+    src: url('AMERIKA_-webfont.eot');
+    src: url('AMERIKA_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('AMERIKA_-webfont.woff2') format('woff2'),
+         url('AMERIKA_-webfont.woff') format('woff'),
+         url('AMERIKA_-webfont.ttf') format('truetype'),
+         url('AMERIKA_-webfont.svg#amerikaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*-----------------------------Pseudo-NavBar-----------------------------------------*/
+.lien0{
+  font-family: 'amerikaregular', 'amerika_sansregular', arial, serif;
+  font-size: xx-large;
+}
+
+.lien0 a:link , .lien0 a:visited{
+  background-color: transparent;
+  color: black;  ;
+  padding: 14px 25px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.lien0 a:hover, .lien0 a:active {
+  color: white;
+  font-weight: bold;
+}
+
+.lienConnexion{
+  font-family: 'amerika_sansregular','amerikaregular', arial, serif;
+  font-size: medium;
+}
+
+.lienConnexion a:link , .lienConnexion a:visited{
+  background-color: transparent;
+  color: black;  ;
+  padding: 14px 25px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.lienConnexion a:hover, .lienConnexion a:active {
+  color: black;
+  font-weight: bold;
+}
+
+header.index {
+  background: url("../images/BackgroundPseudoBar2.jpg") no-repeat fixed top center;
+}
+
+/*--------------------------------------lienVR--------------------------------------*/
+.lienVR{
+  font-family: 'amerika_sansregular','amerikaregular', arial, serif;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.lienVR a:link , .lienVR a:visited{
+  background-color: transparent;
+  color: black;  
+  padding: 14px 25px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.lienVR a:hover, .lienVR a:active {
+  background-color: black;
+  color: white;
+}
+
+.containerVR{
+  display: flex;
+  margin-top: 100px;
+}
+
+.BigVRContainer {
+  display: flex;
+  justify-content: space-around;
+}
+/*-------------------------------------upper_NavBar---------------------------------*/
+
+ul.navUp {
+    list-style-type: armenian;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-right:0px;
+    margin-left:0px;
+    float:none;
+    border-bottom: 0px rgba(0,0,0,1) inset;
+    border-top: none;
+    background: url("../images/BackgroundPseudoBar2.jpg") no-repeat fixed top center;
+   
+}
+li.navUp { 
+  display: inline;
+  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
+}
+
+li.navUp a:link , li.navUp a:visited{
+  background-color: transparent;
+  color: white  ;
+  padding: 14px 25px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+li.navUp a:hover, li.navUp a:active {
+  color: white;
+  font-weight: bold;
+}
+
+
+/*-------------------------------------Lower_NavBar---------------------------------*/
+ul.navLow {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 250px;
+    margin-right:140px;
+    margin-left:120px;
+    float:none;
+    border-top: 1px rgba(0,0,0,1) inset;
+    background-color: white;
+}
+li.navLow {
+  display: inline;
+  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
+}
+
+li.navLow a:link , li.navLow a:visited{
+  background-color: transparent;
+  color: black  ;
+  padding: 14px 25px;
+  text-decoration: none;
+  display: inline-block
+}
+
+li.navLow a:hover, li.navLow a:active {
+    color: black;
+    font-weight: bold;
+}
+
+.insta {
+  margin-top: 8px;
+}
+
+.aPropos {
+  margin-top: 20px;
+}
+
+/* ------------------------------------------------------------Corps----------------------------------------------------------- */
+
+
+/*-------------------------------------------Section1-------------------------------*/
+div.section1
+{
+    background: url(../images/burgerBackground.jpg) no-repeat center top;
+    padding-left: 230px;
+    padding-top: 110px;
+    padding-bottom: 350px;
+    color: ghostwhite;
+    margin-top: 50px;
+}
+h1.description
+{
+margin-top: 100px;
+}
+.description {
+    padding-right: 1000px;
+    margin-left: 100px;
+    font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
+}
+
+
+/*--------------------------------section2-------------------------------------*/
+section.section2
+{
+    display: flex;
+    margin-top: 100px;
+    font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
+    font-size: large;
+    padding-left: 15px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    flex: 1;
+}
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 13px;
+}
+
+aside.section2
+{
+    flex: 3;
+    position: relative;
+    background-color: rgb(112,107,100);
+    box-shadow: 0px 2px 5px rgb(28,26,25) ;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#fleche_bulle
+{
+    position: absolute; 
+    top: 100px;
+    left: -12px;
+} 
+
+h1.voisinage{
+   text-align: center;
+   font-size: xx-large;
+}
+
+ul.section2 {
+    text-align: justify;
+}
+
+
+/*--------------------------------section3-------------------------------------*/
+section.section3
+{
+    display: flex;
+    margin-top: 100px;
+    font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
+    font-size: large;
+    padding-left: 15px;
+}
+
+
+.ico_categorie1
+{
+    vertical-align: middle;
+    margin-left: 13px;
+}
+aside.section3
+{
+    flex: 3;
+    position: relative;
+    background-color: rgb(112,107,100);
+    box-shadow: 0px 2px 5px rgb(28,26,25) ;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#fleche_bulle1
+{
+    position: absolute; 
+    top: 100px;
+    left: 1406.5px;
+} 
+
+
+h1.restos{
+   text-align: center;
+   font-size: xx-large;
+}
+
+ul.section3 {
+    text-align: justify;
+}
+
+/*---------------------------------------------------PageRestos-------------------------------------------*/
+/*-----------------------------BarreDeRecherche----------------*/
+
+
+.element {
+  margin-top: 100px;
+  position: relative;
+  background: url(../images/pizzaBackground.jpg) no-repeat center;
+  padding-top: 350px;
+  padding-bottom: 350px; 
+  padding-left: 160px;
+  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
+}
+
+.adresse {
+  width: 400px;
+  padding: 20px;
+  margin-right: 20px; 
+  border:none;
+}
+
+.submit {
+  padding: 20px;
+  border: none;
+  background-color: rgb(112,107,100);
+  color: white;
+}
+
+
+/*-----------------------------sectionSuggestion---------------------*/
+.suggestions {
+  margin: 70px;
+  padding: 250px;
+  border: solid;
+}
+
+
+/*-------------------------------AjouterRestos-------------------------*/
+.addRestos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  position: relative;
+  background: url(../images/Network.jpg) no-repeat center;
+  padding-top: 250px;
+  padding-bottom: 250px; 
+  padding-left: 160px;
+  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
+}
+
+/*---------------------------------------------------PageVoisinage-------------------------------------------*/
+/*-----------------------------BarreDeRecherche----------------*/
+
+
+.elementVoisinage {
+  margin-top: 100px;
+  position: relative;
+  background: url(../images/buffet2.jpg) no-repeat center;
+  padding-top: 350px;
+  padding-bottom: 350px; 
+  padding-left: 260px;
+  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
+}
+
+.adresse {
+  width: 400px;
+  padding: 20px;
+  margin-right: 20px; 
+  border:none;
+}
+
+.submit {
+  padding: 20px;
+  border: none;
+  background-color: rgb(112,107,100);
+  color: white;
+}
+.input {
+  display: flex;
+}
+
+.descr{
+  color: rgb(250,250,250);
+  font-size: xx-large;
+}
+
+/*-----------------------PageConnexion------------------------------*/
+.formulaireCnx, .formulaireIns {
+  padding: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+.conteneurCnx, .conteneurIns {
+  display: flex;
+  justify-content: space-around;
+}
+
+#imageCompte {
+  padding: 75px;
+  border-right: solid 0.5px;
+}
+
+.elementCnx {
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+.telephone, .sname, .fname, .emailCnx, .passwordCnx, .emailIns, .passwordIns{
+  padding: 25px;
+  border: none;
+  margin-bottom: 25px;
+}
+
+.submitCnx ,.submitIns{
+  padding: 25px 75px;
+  border: none; 
+  margin-bottom: 25px;
+  background-color: rgb(112,107,100);
+  color: white;
+}
+.forgottenPassword {
+  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
+}
+
+.forgottenPassword a:link , .forgottenPassword a:visited{
+  background-color: transparent;
+  color: black;  
+  text-decoration: none;
+  display: inline-block;
+}
+
+.forgottenPassword a:hover, .forgottenPassword a:active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.pasEncore, .deja{
+  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
+}
+
+.pasEncore a:link, .deja a:link , .deja a:visited, .pasEncore a:visited{
+  background-color: transparent;
+  color: black;  
+  text-decoration: none;
+  display: inline-block;
+}
+
+.pasEncore a:hover,.pasEncore a:active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+ .deja a:hover, .deja a:active {
+  font-weight: bold;
+  text-decoration: underline;
+ }
