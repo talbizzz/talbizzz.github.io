@@ -1,448 +1,150 @@
-@font-face {
-    font-family: 'amerika_sansregular';
-    src: url('AMERSN__-webfont.eot');
-    src: url('AMERSN__-webfont.eot?#iefix') format('embedded-opentype'),
-         url('AMERSN__-webfont.woff2') format('woff2'),
-         url('AMERSN__-webfont.woff') format('woff'),
-         url('AMERSN__-webfont.ttf') format('truetype'),
-         url('AMERSN__-webfont.svg#amerika_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+body{
+    margin: auto 0;
+    font-family: arial;
 }
-@font-face {
-    font-family: 'amerikaregular';
-    src: url('AMERIKA_-webfont.eot');
-    src: url('AMERIKA_-webfont.eot?#iefix') format('embedded-opentype'),
-         url('AMERIKA_-webfont.woff2') format('woff2'),
-         url('AMERIKA_-webfont.woff') format('woff'),
-         url('AMERIKA_-webfont.ttf') format('truetype'),
-         url('AMERIKA_-webfont.svg#amerikaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+.zone {
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
 }
 
-
-/*-----------------------------Pseudo-NavBar-----------------------------------------*/
-.lien0{
-  font-family: 'amerikaregular', 'amerika_sansregular', arial, serif;
-  font-size: xx-large;
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
-.lien0 a:link , .lien0 a:visited{
-  background-color: transparent;
-  color: black;  ;
-  padding: 14px 25px;
-  text-decoration: none;
-  display: inline-block;
+/* NAV */
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
 }
-
-.lien0 a:hover, .lien0 a:active {
-  color: white;
-  font-weight: bold;
-}
-
-.lienConnexion{
-  font-family: 'amerika_sansregular','amerikaregular', arial, serif;
-  font-size: medium;
-}
-
-.lienConnexion a:link , .lienConnexion a:visited{
-  background-color: transparent;
-  color: black;  ;
-  padding: 14px 25px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.lienConnexion a:hover, .lienConnexion a:active {
-  color: black;
-  font-weight: bold;
-}
-
-header.index {
-  background: url("../images/BackgroundPseudoBar2.jpg") no-repeat fixed top center;
-}
-
-/*--------------------------------------lienVR--------------------------------------*/
-.lienVR{
-  font-family: 'amerika_sansregular','amerikaregular', arial, serif;
-  text-align: center;
-  font-size: xx-large;
-}
-
-.lienVR a:link , .lienVR a:visited{
-  background-color: transparent;
-  color: black;  
-  padding: 14px 25px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.lienVR a:hover, .lienVR a:active {
-  background-color: black;
-  color: white;
-}
-
-.containerVR{
-  display: flex;
-  margin-top: 100px;
-}
-
-.BigVRContainer {
-  display: flex;
-  justify-content: space-around;
-}
-/*-------------------------------------upper_NavBar---------------------------------*/
-
-ul.navUp {
-    list-style-type: armenian;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    margin-top: 0px;
-    margin-right:0px;
-    margin-left:0px;
-    float:none;
-    border-bottom: 0px rgba(0,0,0,1) inset;
-    border-top: none;
-    background: url("../images/BackgroundPseudoBar2.jpg") no-repeat fixed top center;
-   
-}
-li.navUp { 
-  display: inline;
-  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
-}
-
-li.navUp a:link , li.navUp a:visited{
-  background-color: transparent;
-  color: white  ;
-  padding: 14px 25px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-li.navUp a:hover, li.navUp a:active {
-  color: white;
-  font-weight: bold;
-}
-
-
-/*-------------------------------------Lower_NavBar---------------------------------*/
-ul.navLow {
+.main-nav{
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    margin-top: 250px;
-    margin-right:140px;
-    margin-left:120px;
-    float:none;
-    border-top: 1px rgba(0,0,0,1) inset;
-    background-color: white;
-}
-li.navLow {
-  display: inline;
-  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
+    list-style: none;
+    font-size: 0.7em;
+    margin:0; 
 }
 
-li.navLow a:link , li.navLow a:visited{
-  background-color: transparent;
-  color: black  ;
-  padding: 14px 25px;
-  text-decoration: none;
-  display: inline-block
+@media only screen and (max-width: 600px) {
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+    }
 }
 
-li.navLow a:hover, li.navLow a:active {
-    color: black;
-    font-weight: bold;
+li{
+    padding: 20px;
 }
 
-.insta {
-  margin-top: 8px;
+a{
+    color: #f5f5f6;
+    text-decoration: none;
 }
 
-.aPropos {
-  margin-top: 20px;
+.push{
+    margin-left: auto;
 }
 
-/* ------------------------------------------------------------Corps----------------------------------------------------------- */
-
-
-/*-------------------------------------------Section1-------------------------------*/
-div.section1
-{
-    background: url(../images/burgerBackground.jpg) no-repeat center top;
-    padding-left: 230px;
-    padding-top: 110px;
-    padding-bottom: 350px;
-    color: ghostwhite;
-    margin-top: 50px;
-}
-h1.description
-{
-margin-top: 100px;
-}
-.description {
-    padding-right: 1000px;
-    margin-left: 100px;
-    font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
-}
-
-
-/*--------------------------------section2-------------------------------------*/
-section.section2
-{
+/* COVER STYLE */
+.container {
     display: flex;
-    margin-top: 100px;
-    font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
-    font-size: large;
-    padding-left: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
 }
 
-article, aside
-{
-    text-align: justify;
+.cover {
+    width: 30rem; 
+    margin-top: 80px;
 }
 
-article
-{
-    flex: 1;
+/* Project GRID */
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
 }
 
-.ico_categorie
-{
-    vertical-align: middle;
-    margin-right: 13px;
+.box  > img {
+    width: 100%;
 }
 
-aside.section2
-{
-    flex: 3;
-    position: relative;
-    background-color: rgb(112,107,100);
-    box-shadow: 0px 2px 5px rgb(28,26,25) ;
-    border-radius: 5px;
-    padding: 5px;
-    color: white;
-    font-size: 0.9em;
+.box {
+    background-color: #444;
+    padding: 80px;
+    margin: 20px;
 }
 
-#fleche_bulle
-{
-    position: absolute; 
-    top: 100px;
-    left: -12px;
-} 
-
-h1.voisinage{
-   text-align: center;
-   font-size: xx-large;
+.box:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg)
+    -o-transform:rotate(-7deg)
+    transform:rotate(-7deg)
 }
 
-ul.section2 {
-    text-align: justify;
-}
-
-
-/*--------------------------------section3-------------------------------------*/
-section.section3
-{
+.flex-wrapper{
     display: flex;
-    margin-top: 100px;
-    font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
-    font-size: large;
-    padding-left: 15px;
+    justify-content: center;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+}
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green{
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
 }
 
-
-.ico_categorie1
-{
-    vertical-align: middle;
-    margin-left: 13px;
-}
-aside.section3
-{
-    flex: 3;
-    position: relative;
-    background-color: rgb(112,107,100);
-    box-shadow: 0px 2px 5px rgb(28,26,25) ;
-    border-radius: 5px;
-    padding: 5px;
-    color: white;
-    font-size: 0.9em;
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
 }
 
-#fleche_bulle1
-{
-    position: absolute; 
-    top: 100px;
-    left: 1406.5px;
-} 
-
-
-h1.restos{
-   text-align: center;
-   font-size: xx-large;
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
 }
 
-ul.section3 {
-    text-align: justify;
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
-
-/*---------------------------------------------------PageRestos-------------------------------------------*/
-/*-----------------------------BarreDeRecherche----------------*/
-
-
-.element {
-  margin-top: 100px;
-  position: relative;
-  background: url(../images/pizzaBackground.jpg) no-repeat center;
-  padding-top: 350px;
-  padding-bottom: 350px; 
-  padding-left: 160px;
-  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
-}
-
-.adresse {
-  width: 400px;
-  padding: 20px;
-  margin-right: 20px; 
-  border:none;
-}
-
-.submit {
-  padding: 20px;
-  border: none;
-  background-color: rgb(112,107,100);
-  color: white;
-}
-
-
-/*-----------------------------sectionSuggestion---------------------*/
-.suggestions {
-  margin: 70px;
-  padding: 250px;
-  border: solid;
-}
-
-
-/*-------------------------------AjouterRestos-------------------------*/
-.addRestos {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 100px;
-  position: relative;
-  background: url(../images/Network.jpg) no-repeat center;
-  padding-top: 250px;
-  padding-bottom: 250px; 
-  padding-left: 160px;
-  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
-}
-
-/*---------------------------------------------------PageVoisinage-------------------------------------------*/
-/*-----------------------------BarreDeRecherche----------------*/
-
-
-.elementVoisinage {
-  margin-top: 100px;
-  position: relative;
-  background: url(../images/buffet2.jpg) no-repeat center;
-  padding-top: 350px;
-  padding-bottom: 350px; 
-  padding-left: 260px;
-  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
-}
-
-.adresse {
-  width: 400px;
-  padding: 20px;
-  margin-right: 20px; 
-  border:none;
-}
-
-.submit {
-  padding: 20px;
-  border: none;
-  background-color: rgb(112,107,100);
-  color: white;
-}
-.input {
-  display: flex;
-}
-
-.descr{
-  color: rgb(250,250,250);
-  font-size: xx-large;
-}
-
-/*-----------------------PageConnexion------------------------------*/
-.formulaireCnx, .formulaireIns {
-  padding: 250px;
-  display: flex;
-  justify-content: space-around;
-}
-.conteneurCnx, .conteneurIns {
-  display: flex;
-  justify-content: space-around;
-}
-
-#imageCompte {
-  padding: 75px;
-  border-right: solid 0.5px;
-}
-
-.elementCnx {
-  margin-top: 25px;
-  margin-left: 50px;
-}
-
-.telephone, .sname, .fname, .emailCnx, .passwordCnx, .emailIns, .passwordIns{
-  padding: 25px;
-  border: none;
-  margin-bottom: 25px;
-}
-
-.submitCnx ,.submitIns{
-  padding: 25px 75px;
-  border: none; 
-  margin-bottom: 25px;
-  background-color: rgb(112,107,100);
-  color: white;
-}
-.forgottenPassword {
-  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
-}
-
-.forgottenPassword a:link , .forgottenPassword a:visited{
-  background-color: transparent;
-  color: black;  
-  text-decoration: none;
-  display: inline-block;
-}
-
-.forgottenPassword a:hover, .forgottenPassword a:active {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.pasEncore, .deja{
-  font-family: 'amerika_sansregular', 'amerikaregular', arial, serif;
-}
-
-.pasEncore a:link, .deja a:link , .deja a:visited, .pasEncore a:visited{
-  background-color: transparent;
-  color: black;  
-  text-decoration: none;
-  display: inline-block;
-}
-
-.pasEncore a:hover,.pasEncore a:active {
-  font-weight: bold;
-  text-decoration: underline;
-}
- .deja a:hover, .deja a:active {
-  font-weight: bold;
-  text-decoration: underline;
- }
