@@ -66,19 +66,24 @@ a{
 
 /* Project GRID */
 .grid-wrapper {
+
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    grid-gap: 100px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .box  > img {
-    width: 100%;
+    width: 50%;
+    height: 50%;
 }
 
 .box {
-    background-color: #444;
+
     padding: 80px;
     margin: 20px;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 .box:hover {
@@ -86,11 +91,6 @@ a{
     -moz-transform:rotate(-7deg)
     -o-transform:rotate(-7deg)
     transform:rotate(-7deg)
-}
-
-.flex-wrapper{
-    display: flex;
-    justify-content: center;
 }
 /* FOOTER */
 footer {
@@ -140,11 +140,9 @@ footer {
  *  Blue Background
  **********************************************************************/
 .blue{
-    background: #7abcff; /* Old browsers */
-    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
-    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+    background: url(../images/burger.gif) no-repeat bottom center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
 }
